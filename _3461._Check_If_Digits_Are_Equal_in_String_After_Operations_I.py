@@ -7,9 +7,10 @@ class Solution:
         return temp
 
     def hasSameDigits(self, s: str) -> bool:
-        
+
         while len(s) > 2:
             s = self.calc(s)
 
+        
         return s[0] == s[-1]
         
